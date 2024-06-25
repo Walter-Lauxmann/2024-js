@@ -24,7 +24,7 @@
     <main class="contenedor sombra">
       <section>
         <div>
-          <h2>Cálculo de la superficie de un triángulo</h2>
+          <h2>1.1 Cálculo de la superficie de un triángulo</h2>
           <label for="base">Ingrese la base</label>
           <input type="number" id="base" /> <br />
           <label for="altura">Ingrese la altura</label>
@@ -35,7 +35,7 @@
       </section>
       <section>
         <div>
-          <h2>Cálculo de la superficie de un rectángulo</h2>
+          <h2>1.2 Cálculo de la superficie de un rectángulo</h2>
           <label for="base2">Ingrese la base</label>
           <input type="number" id="base2" /> <br />
           <label for="altura2">Ingrese la altura</label>
@@ -44,6 +44,38 @@
         </div>
         <p>La superficie es: <span id="sup2"></span> </p>
         <p>El perímetro es: <span id="per2"></span> </p>
+      </section>
+      <section>
+        <div>
+          <h2>1.3 Cálculo del área y el volumen de un cilindro</h2>
+          <label for="radio">Ingrese el radio</label>
+          <input type="number" id="radio" /> <br />
+          <label for="altura3">Ingrese la altura</label>
+          <input type="number" id="altura3" /> <br />
+          <button onclick="calcular3()"> Calcular </button>          
+        </div>
+        <p>El área es: <span id="area"></span> </p>
+        <p>El volumen es: <span id="vol"></span> </p>
+      </section>
+      <section>
+        <div>
+          <h2>1.4 Cálculo del Vuelto</h2>
+          <label for="monto">Ingrese el monto</label>
+          <input type="number" id="monto" /> <br />
+          <label for="pago">Ingrese el pago</label>
+          <input type="number" id="pago" /> <br />
+          <button onclick="calcular4()"> Calcular </button>          
+        </div>
+        <p>Su vuelto es: $ <span id="vuelto"></span> </p>        
+      </section>
+      <section>
+        <div>
+          <h2>1.5 Cálculo de segundos</h2>
+          <label for="dias">Ingrese la cantidad de días</label>
+          <input type="number" id="dias" /> <br />
+          <button onclick="calcular5()"> Calcular </button>          
+        </div>
+        <p>En <span id="spandias"></span> días hay <span id="seg"></span> segundos </p>        
       </section>
     </main>
 

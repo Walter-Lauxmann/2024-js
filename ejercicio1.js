@@ -36,3 +36,59 @@ function calcular2() {
     spanPer2.innerHTML = per;
 
 }
+
+function calcular3() {
+    // Constantes del DOM
+    const inputRadio = document.getElementById('radio');
+    const inputAltura3 = document.getElementById('altura3');
+    const spanArea = document.getElementById('area');
+    const spanVolumen = document.getElementById('vol');
+
+    const PI = Math.PI;
+
+    // Variables de ingreso de datos
+    let radio = parseFloat(inputRadio.value);
+    let altura = parseFloat(inputAltura3.value);
+
+    // Cálculo del área
+    area = 2 * PI * radio * altura;
+    // Cálculo del volumen
+    vol = PI * radio**2 * altura;
+
+    // Mostrar el área y el volumen
+    spanArea.innerHTML = area;
+    spanVolumen.innerHTML = vol;
+
+}
+function calcular4() {
+    // Constantes del DOM
+    const inputMonto = document.getElementById('monto');
+    const inputPago = document.getElementById('pago');
+    const spanVuelto = document.getElementById('vuelto');
+
+    // Variables de ingreso de datos
+    let monto = parseFloat(inputMonto.value);
+    let pago = parseFloat(inputPago.value);
+
+    // Cálculo del área
+    vuelto = pago - monto;
+
+    // Mostrar el vuelto
+    spanVuelto.innerHTML = vuelto;
+}
+function calcular5() {
+    // Constantes del DOM
+    const inputDias = document.getElementById('dias');
+    const spanDias = document.getElementById('spandias');
+    const spanSeg = document.getElementById('seg');
+
+    // Variables de ingreso de datos
+    let dias = parseInt(inputDias.value);
+
+    // Cálculo de los segundos
+    seg = dias * 24 * 60 * 60;
+
+    // Mostrar el vuelto
+    spanDias.innerHTML = dias;
+    spanSeg.innerHTML = seg;
+}
