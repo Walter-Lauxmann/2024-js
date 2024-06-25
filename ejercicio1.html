@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicios JS</title>
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="estilos.css">
+  </head>
+  <body>
+    <header>
+      <h1>EJERCICIOS 1</h1>
+    </header>
+    <nav class="menu">
+      <div class="menu-contenedor">
+        <ul class="menu-flex">
+          <li><a href="./">Inicio</a></li>
+          <li><a href="./ejercicio1.html">Ejercicio 1</a></li>
+          
+        </ul>
+      </div>
+    </nav>    
+
+    <main class="contenedor sombra">
+      <section>
+        <div>
+          <h2>Cálculo de la superficie de un triángulo</h2>
+          <label for="base">Ingrese la base</label>
+          <input type="number" id="base" /> <br />
+          <label for="altura">Ingrese la altura</label>
+          <input type="number" id="altura" /> <br />
+          <button onclick="calcular()"> Calcular </button>          
+        </div>
+        <p>La superficie es: <span id="sup"></span> </p>
+      </section>
+      <section>
+        <div>
+          <h2>Cálculo de la superficie de un rectángulo</h2>
+          <label for="base2">Ingrese la base</label>
+          <input type="number" id="base2" /> <br />
+          <label for="altura2">Ingrese la altura</label>
+          <input type="number" id="altura2" /> <br />
+          <button onclick="calcular2()"> Calcular </button>          
+        </div>
+        <p>La superficie es: <span id="sup2"></span> </p>
+        <p>El perímetro es: <span id="per2"></span> </p>
+      </section>
+    </main>
+
+    <footer>
+      <p>ISCA 4014 - Todos los derechos reservados - 2024</p>
+    </footer>
+    <script src="./ejercicio1.js"></script>
+  </body>
+</html>
